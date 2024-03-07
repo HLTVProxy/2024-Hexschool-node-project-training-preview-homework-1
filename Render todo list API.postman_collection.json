@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "069db618-0948-4234-b114-2d8cea4aa285",
+		"name": "Render todo list API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10013012"
+	},
+	"item": [
+		{
+			"name": "Get all todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://two024-hexschool-node-project-training.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"two024-hexschool-node-project-training",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get single todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://two024-hexschool-node-project-training.onrender.com/todos/1",
+					"protocol": "https",
+					"host": [
+						"two024-hexschool-node-project-training",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Todo - test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://two024-hexschool-node-project-training.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"two024-hexschool-node-project-training",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update single  todo",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Todo - updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://two024-hexschool-node-project-training.onrender.com/todos/1",
+					"protocol": "https",
+					"host": [
+						"two024-hexschool-node-project-training",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete all todos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://two024-hexschool-node-project-training.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"two024-hexschool-node-project-training",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete single todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://two024-hexschool-node-project-training.onrender.com/todos/1",
+					"protocol": "https",
+					"host": [
+						"two024-hexschool-node-project-training",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Handle CORS",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": "https://two024-hexschool-node-project-training.onrender.com",
+					"protocol": "https",
+					"host": [
+						"two024-hexschool-node-project-training",
+						"onrender",
+						"com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
