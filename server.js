@@ -70,6 +70,6 @@ const serverHandler = (req, res) => {
 
 const server = createServer((req, res) => serverHandler(req, res));
 
-server.listen(3005).addListener('listening', () => {
-  console.log('Server is listening on port 3005');
+server.listen(process.env.PORT || 3005).addListener('listening', () => {
+  console.log(`Server is listening on port ${process.env.PORT || 3005}`);
 });
